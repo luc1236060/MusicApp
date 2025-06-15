@@ -18,8 +18,6 @@ const { ipcRenderer } = require('electron');
 const minBtn = document.getElementById('min-btn');
 const closeBtn = document.getElementById('close-btn');
 
-
-
 fetch('songs.json').then(r => r.json()).then(data => {songs = data; loadSong(0);});
 
 function loadSong(i) {
@@ -128,8 +126,6 @@ allSongsBtn.onclick = () => {
     toggleView();
 };
 
-
-
 function renderAllSongs() {
     allListUl.innerHTML = '';
     songs.forEach((s, i) => {
@@ -157,9 +153,6 @@ function toggleView () {
         allSongsBtn.innerHTML = '<i class="fa-solid fa-list fa-fw"></i>';
     }
 }
-
-
-
 
 minBtn.addEventListener('click', () => {
     ipcRenderer.send('minimize-window');
