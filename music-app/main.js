@@ -11,7 +11,7 @@ const createWindow = () => {
     transparent: false,
     titleBarStyle: 'hidden',
     maximizable: false,
-    icon: path.join(__dirname, 'assets', 'icon.jpeg'),
+    icon: path.join(__dirname, 'assets', 'Luc.png'),
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,

@@ -1,1 +1,3 @@
 To start, npm run start.
+
+To package, npm run pack, then, npm run dist
