@@ -1,5 +1,22 @@
-[ 
-  {"file": "Songs/Judas.mp3", "title": "Judas", "cover": "Songs/Covers/JudasCover.jpg"},
-  {"file": "Songs/On&On.mp3", "title": "On & On", "cover": "Songs/Covers/On&OnCover.webp"},
-  {"file": "Songs/WhyWeLose.mp3", "title": "Why We Lose", "cover": "Songs/Covers/WhyWeLoseCover.webp"}
+[
+  {
+    "file": "Songs/Judas.mp3",
+    "title": "Judas",
+    "cover": "Songs/Covers/JudasCover.jpg"
+  },
+  {
+    "file": "Songs/On&On.mp3",
+    "title": "On & On",
+    "cover": "Songs/Covers/On&OnCover.webp"
+  },
+  {
+    "file": "Songs/WhyWeLose.mp3",
+    "title": "Why We Lose",
+    "cover": "Songs/Covers/WhyWeLoseCover.webp"
+  },
+  {
+    "file": "Songs/Gloria Gaynor - I Will Survive.mp3",
+    "cover": "Songs/Covers/IWillSurvive.png",
+    "title": "I will Survive"
+  }
 ]

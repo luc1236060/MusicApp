@@ -1,5 +1,6 @@
 const { app, BrowserWindow } = require('electron/main')
 const { ipcMain } = require('electron');
+const path = require('path');
 
 const createWindow = () => {
   const win = new BrowserWindow({
@@ -10,9 +11,12 @@ const createWindow = () => {
     transparent: false,
     titleBarStyle: 'hidden',
     maximizable: false,
+    icon: path.join(__dirname, 'assets', 'icon.jpeg'),
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
+      sandbox: false,
+      devTools: false,
     }
   })
 

@@ -17,6 +17,7 @@
   </head>
   <body>
     <div class="titlebar">
+      <button id="credits-btn"><i class="fa-solid fa-circle-user"></i></button>
       <span>The Music</span>
       <div class="window-btns">
         <button id="min-btn"><i class="fa-solid fa-window-minimize"></i></button>
@@ -67,10 +68,55 @@
         </div>
       </div>
       <div id="listView" class="layout" style="display:none;">
-        <h2>All Songs</h2>
+        <div class="allsongstop">
+          <h2>All Songs</h2>
+          <div class="listViewBtns">
+            <button id="upload"> + New Song</button>
+            <button id="deleteToggle">Delete: Off</button>
+          </div>
+        </div>
         <ul id="allSongsList"></ul>
       </div>
     </div>
+    <div id="titlePrompt" class="modal" style="display:none;">
+      <div class="content">
+        <h3>Enter Song Title</h3>
+        <input type="text" id="songTitleInput" class="songTitleInput" placeholder="Song title..."/>
+        <div class="modal-buttons">
+          <button id="titleSubmit" class="primary">Submit</button>
+          <button id="titleCancel" class="secondary">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <div id="deletePrompt" class="modal" style="display:none;">
+      <div class="content">
+        <h3>Are you sure?</h3>
+        <p id="deleteMessage">Are you sure?</p>
+        <div class="modal-buttons">
+          <button id="deleteConfirm" class="danger">Delete</button>
+          <button id="deleteCancel" class="secondary">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <div id="creditsView" class="layout" style="display:none;">
+      <div class="createdBy">
+        <h3>Louis Au</h3>
+        <ul>
+          <li>
+            <a href="https://luc1236060.github.io">
+              <i title="Portfolio" class="fa-solid fa-globe"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/luc1236060">
+              <i title="GitHub" class="fa-brands fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <input type="file" id="mp3Input" accept="audio/mpeg" style="display:none;">
+    <input type="file" id="coverInput" accept="image/*" style="display:none;">
     <script src="app.js"></script>
   </body>
 </html>
